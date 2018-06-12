@@ -18,7 +18,6 @@ TEMPLATES = [
 		],
 		'OPTIONS': {
 			'context_processors': [
-					'django.core.context_processors.request',
 					'website.context_processors.admin_processor',
 					'website.context_processors.moderator_activated',
 					'django.contrib.auth.context_processors.auth',
@@ -65,7 +64,7 @@ DATABASES = {
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ['forums.fossee.in']
+ALLOWED_HOSTS = ['forums.fossee.in', 'localhost']
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
